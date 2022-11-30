@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/common.css';
+import React from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Footer from './components/Footer';
+import CreatePoll from './components/CreatePoll';
+import Profile from './components/Profile';
+import Home from './components/Home';
+import Search from './components/Search';
+import PollDetail from './components/PollDetail';
+import { Route, Routes } from 'react-router-dom';
+import Welcome from './components/Welcome';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='maincontent'>
+        <Routes>
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/profile/:username' element={<Profile/>}/>
+          <Route path='/poll/new' element={<CreatePoll/>}/>
+          <Route path='/poll/view/:id' element={<PollDetail/>}/>
+          <Route path='/search' element={<Search/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/' element={<Welcome/>}/>
+        </Routes>
+      </div>
+      <Footer/>
     </div>
   );
 }

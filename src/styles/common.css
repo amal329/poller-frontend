@@ -1,0 +1,381 @@
+header{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 180px;
+    height: 90px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    margin: 5px 15px;
+}
+
+.item{
+    width: 100%;
+    height: 100%
+}
+
+.item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: 100%;
+    padding: 0px 25px;
+}
+
+.logo:hover{
+    background-color: #BCE29E;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: #BCE29E;
+    cursor: pointer;
+}
+
+header .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.toggle{
+    margin: 30px 0px;
+}
+
+.form{
+    width: 350px;
+    height: fit-content;
+}
+
+.carousel{
+    position: relative;
+    height: 55vh;
+    width: 45vw;
+}
+
+.carousel .image{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel .image img{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel .controls{
+    position: absolute;
+    bottom: 10px;
+    left: 42%;
+    width: fit-content;
+    height: 15px;
+}
+
+.carousel .controls i{
+    font-size: 10px;
+    margin: 7px 5px;
+    color: rgb(100, 128, 0);
+}
+
+.section{
+    width: 100vw;
+    padding-top: 70px;
+    flex-grow: 1;
+}
+
+.section h2{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.section p{
+    margin-left: 50px;
+    font-size: 1.3em;
+}
+
+.poll{
+    /* background-color: #C7F2A4; */
+    width: fit-content;
+    border-radius: 15px;
+    display: block;
+    margin: 35px 0px;
+    border: 2px solid green;
+}
+
+.poll .content{
+    display: inline-block;
+    margin: 20px;
+    width: 55vw;
+}
+
+.poll .content div{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.poll .title{
+}
+
+.poll .title h3{
+    margin: 5px 0px;
+}
+
+.poll .options{
+}
+
+.poll .option{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.poll .option .right{
+    margin-left: 5px;
+}
+
+.poll .option i{
+    margin: auto;
+}
+
+.poll .option p{
+    display: inline-block;
+    margin: 9px 0px;
+}
+
+.poll .option .parent{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.poll .option .child{
+    width: 100%;
+    min-height: 40px;
+    background-color: #FCFFB2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.poll .child input{
+    width: fit-content;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+.poll .child input:focus{
+    width: fit-content;
+    min-height: 50px;
+    outline: none;
+}
+
+.poll .optionValue-active{
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+.poll .optionValue{
+    width: 100%;
+    margin-left: 15px;
+    font-size: 1.0em;
+    background: none;
+    border: none;
+}
+
+.poll .controls{
+    width: 100%;
+}
+
+.poll .controls Button{
+    margin : 5px 0px
+}
+
+.poll .statistics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.poll .statistics .cell{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-left: 1px solid;
+    width: 100%;
+    margin: auto;
+}
+
+.poll .statistics .link{
+    cursor: pointer;
+}
+
+.statistics .cell:nth-child(1){
+    border: none;
+}
+
+.poll .statistics .cell i{
+    align-self: center;
+    margin-right: 10px;
+}
+
+.option .flexrow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.option .flexrow .input{
+    width: 100%;
+}
+
+.option .flexrow .button{
+    margin: auto;
+    max-width: 50px;
+}
+
+.option .flexrow .button i{
+    color: rgb(103, 46, 46);
+}
+
+.purple{
+    background-color: #B1AFFF;
+}
+
+.red{
+    background-color: #FF8787;
+}
+
+.green{
+    background-color: #BCE29E;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search{
+    margin: 40px 150px;
+}
+
+.footer{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C7F2A4;
+}
+
+.footer .icon{
+    margin: 5px 10px;
+}
+
+.icon i{
+    font-size: 25px;
+}
+
+.icon i:hover{
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 550px;
+}
+
+.welcomebanner{
+    background-image: url('../images/pattern.png');
+    background-repeat: repeat;
+    background-size: 400px 200px;
+}
+
+.pagination{
+    width: 100%;
+    min-height: max-content;
+    margin: 10px 0px;
+}
+
+.pagination .pages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.listofpolls .nopolls{
+    margin: 150px 0px;
+}
+
+.listofpolls .pagination .page i,a{
+    color: green;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.pagination .page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px green;
+    margin: 5px 5px;
+}
+
+.pagination .page:hover{
+    cursor: pointer;
+}
+
+.pagination .selected{
+    background-color: #C7F2A4;
+}
+
+.listofpolls .pagination .disabled i{
+    color: grey;
+}
+
+.pagination .disabled:hover{
+    cursor: default;
+}
+
+.pagination .disabled{
+    border: 1px solid grey;
+}
+
+.maincontent{
+    min-height: 80vh;
+}
